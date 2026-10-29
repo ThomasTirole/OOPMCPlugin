@@ -7,6 +7,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 
+
 public class DeathCoordinatesListener implements Listener {
 
     @EventHandler
@@ -18,8 +19,12 @@ public class DeathCoordinatesListener implements Listener {
         int y = player.getLocation().getBlockY();
         int z = player.getLocation().getBlockZ();
 
+        // Display the coordinates in the console
+        System.out.println("Player " + player.getName() + " died at coordinates: X: " + x + ", Y: " + y + ", Z: " + z);
+
         // Send the coordinates to the player
         player.sendMessage(Component.text("Mort aux coords suivantes -> X : " + x + ", Y : " + y + ", Z : " + z, NamedTextColor.RED));
+
     }
 
 }

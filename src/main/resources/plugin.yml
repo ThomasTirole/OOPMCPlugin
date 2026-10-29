@@ -11,6 +11,10 @@ commands:
     usage: /heal
     permission: oopmc.heal
 
+  testinv:
+    description: Remplit l'inventaire pour les tests
+    usage: /ch.tirtho.oopmc.testinv
+
 permissions:
   oopmc.heal:
     description: Autorise /heal
