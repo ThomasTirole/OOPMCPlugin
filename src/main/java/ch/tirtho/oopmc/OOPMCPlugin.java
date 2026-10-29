@@ -15,7 +15,7 @@ public final class OOPMCPlugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new WelcomeListener(), this);
         getCommand("heal").setExecutor(new HealCommand());
         getServer().getPluginManager().registerEvents(new DeathCoordinatesListener(), this);
-        getServer().getPluginManager().registerEvents(new DeathChestListener(), this);
+        getServer().getPluginManager().registerEvents(new DeathChestListener(this), this);
         getCommand("testinv").setExecutor(new TestInventoryCommand());
     }
 
