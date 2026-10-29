@@ -1,0 +1,17 @@
+name: oopmc
+version: '${version}'
+
+main: ch.tirtho.oopmc.OOPMCPlugin
+api-version: '26.3'
+load: POSTWORLD
+
+commands:
+  heal:
+    description: Soigne le joueur
+    usage: /heal
+    permission: oopmc.heal
+
+permissions:
+  oopmc.heal:
+    description: Autorise /heal
+    default: op
