@@ -13,7 +13,7 @@ commands:
 
   testinv:
     description: Remplit l'inventaire pour les tests
-    usage: /ch.tirtho.oopmc.testinv
+    usage: /testinv
 
 permissions:
   oopmc.heal:
